@@ -1,0 +1,135 @@
+﻿/*BODY*/
+#bag{
+   font-family: Open Sans;
+   padding-bottom: 100px;
+}
+#bag-content{
+   background-color: #fff;
+   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);
+}
+#order{
+   height: 630px;
+}
+#nav-tab{
+   height: 100px;
+}
+#nav-tab .col-md-3{
+   text-align: center;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 100px;
+   transition: all 0.3s;
+   background-color: #103667;
+}
+#nav-tab .col-md-3 a{
+   color: #fafafa;
+   text-decoration: none;
+}
+#nav-tab .col-md-3:hover{
+   background-color: #94AAD6;
+}
+.tab-content{
+   padding: 20px 50px;
+}
+#tab{
+   height: 40px;
+}
+.tab-content .section{
+   font-weight: 700;
+   text-align: center;
+   line-height: 40px;
+   border-bottom: 1px solid #cecece;
+}
+#tab-content{
+   font-weight: 700;
+}
+#tab-content .row{
+   text-align: center;
+   height: 180px;
+   line-height: 170px;
+   font-size: 18px;
+   border-bottom: 1px solid #cecece;
+}
+#tab-content .row .price{
+   color: #e92f46;
+}
+#button-cs a{
+   color: #383838;
+   text-decoration: none;
+}
+#button-pc a{
+   color: #fff;
+   text-decoration: none;
+}
+#button-cs{
+   text-align: center;
+   font-weight: 400;
+   height: 40px;
+   border: 1px solid #cecece;
+   border-radius: 20px;
+   line-height: 40px;
+   font-size: 16px;
+   transition: all 0.3s;
+}
+#button-cs:hover{
+   letter-spacing: 2px;
+}
+#button-pc{
+   text-align: center;
+   font-weight: 400;
+   height: 40px;
+   background-color: #103667;
+   border-radius: 20px;
+   line-height: 40px;
+   font-size: 16px;
+   transition: all 0.3s;
+   float: right;
+}
+#button-pc:hover{
+   letter-spacing: 1px;
+}
+#shipping{
+   height: 500px;
+   padding-top: 50px;
+}
+.shipping-title{
+   font-weight: 700;
+   font-size: 16px;
+   color: #757575;
+   padding-bottom: 10px;
+}
+.input{
+   width: 100%;
+   height: 40px;
+   border: 0px;
+   font-size: 14px;
+   font-style: italic;
+   border-bottom: 1px solid #cecece;
+   margin-bottom: 30px;
+   padding-left: 15px;
+}
+#payment{
+   height: 500px;
+}
+.payment{
+   padding: 50px 130px;
+}
+#confirmation{
+   height: 400px;
+   text-align: center;
+}
+#confirmation .fa{
+   color: #489620;
+   font-size: 72px;
+   padding: 60px 0 30px 0;
+}
+#confirmation .confirmation-title{
+   font-size: 36px;
+   letter-spacing: 1px;
+   color: #383838;
+   padding-bottom: 20px;
+}
+#confirmation .confirmation-title-2{
+   font-size: 14px;
+   color: #757575;
+}

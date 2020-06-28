@@ -1,0 +1,32 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+@font-face{
+   font-family: "Avo";
+   src: url("../../fonts/UTM Avo.ttf");
+}
+@font-face{
+   font-family: "Hi";
+   src: url("../../fonts/Hijrnotes_PERSONAL_USE_ONLY.ttf");
+}
+@font-face{
+   font-family: "Lato";
+   src: url("../../fonts/Lato-Light.ttf");
+}
+@font-face{
+   font-family: "Aller";
+   src: url("../../fonts/Aller_Rg.ttf");
+}
+.no-margin{
+   margin: 0;
+}
+.no-padding{
+   padding: 0;
+}
+body{
+   background-color: #fafafa;
+}
+.active{
+   font-weight: bold;
+}

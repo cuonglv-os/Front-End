@@ -1,0 +1,47 @@
+﻿/*BODY*/
+#about ul{
+   list-style: none;
+   font-family: "Avo";
+   font-size: 14px;
+}
+#about-content{
+   padding: 50px 0 100px 0;
+}
+#about a{
+   color: #383838;
+}
+#about li{
+   display: inline-block;
+}
+.active{
+   font-weight: 700;
+}
+#about #description-title{
+   font-family: "Hi";
+   font-size: 36px;
+   text-align: center;
+   padding-bottom: 50px;
+}
+#about .description-content{
+   font-family: "Avo";
+   font-size: 14px;
+   padding-bottom: 20px;
+}
+#about .description-content-2{
+  font-family: "Avo";
+   font-size: 18px;
+}
+#about .description-sign{
+   font-family: "Hi";
+   font-size: 24px;
+}
+#about #select li{
+   display: block;
+   height: 50px;
+}
+#about #content{
+   background-color: #fff;
+   border-radius: 3px;
+   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);
+   padding: 30px;
+}

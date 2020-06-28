@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Twinkle Jewelry </title>
+	<link href="css/common/bootstrap.min.css" rel="stylesheet">
+	<link href="css/common/font-awesome.min.css" rel="stylesheet">
+	<link href="css/common/style-allpage.css" rel="stylesheet">
+	<link href="css/common/style-header.css" rel="stylesheet">
+	<link href="css/common/style-footer.css" rel="stylesheet">
+	<link href="css/style-item-detail.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/common/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/common/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var i = window.location.hash;
+			var element = document.getElementsByClassName('imgg_content');
+			for (var q = 0; q < 9; q++) {
+				if(i==""){
+					element[q].src = "image/Collection/color1.jpg";
+				} else {
+					element[q].src = "image/Collection/"+i.slice(1)+".jpg";
+				}
+			};
+			$("#bg-content").css("height",$("#content").css("height"));
+			$("#r-content").css("height",$("#content").height()-20+"px");
+			$(window).bind("load resize",function(){
+				$("#bg-content").css("height",$("#content").css("height"));
+			});
+
+			var nameitem = [
+			{name : "queenie", price : "9,99 $"},
+			{name : "twin stars", price : "9,99 $"},
+			{name : "mini heart", price : "9,99 $"},
+			{name : "iconic", price : "9,99 $"},
+			{name : "mirror", price : "9,99 $"},
+			{name : "mini bow", price : "9,99 $"},
+			{name : "double line", price : "9,99 $"},
+			{name : "carrot", price : "9,99 $"},
+			{name : "lolita", price : "9,99 $"},
+			{name : "royal 2", price : "9,99 $"},
+			{name : "elic", price : "9,99 $"},
+			{name : "spot", price : "9,99 $"},
+			{name : "sweet home", price : "9,99 $"},
+			{name : "eira", price : "9,99 $"},
+			{name : "shimmer bear", price : "9,99 $"},
+			{name : "lola 2", price : "9,99 $"}];
+			var nameitemcolor = [
+			{name : "Light gray", price : "9,99 $"},
+			{name : "Light green", price : "9,99 $"},
+			{name : "Light blue", price : "9,99 $"},
+			{name : "Pink", price : "9,99 $"},
+			{name : "Light purple", price : "9,99 $"},
+			{name : "Yellow", price : "9,99 $"},
+			{name : "Green", price : "9,99 $"},
+			{name : "Light pink", price : "9,99 $"}];
+			checkScroll();
+			add();
+			$(window).bind("scroll",function(){
+				var scroll = $(window).scrollTop();
+				if(scroll>300){
+					$("#title-banner-2").css({"animation-name":"title-1","visibility": "visible"});
+					$("#header-scroll").css("visibility","visible");
+				} else{
+					$("#header-scroll").css("visibility","hidden");
+				};
+				if(scroll>700){
+					$("#login,#shopping-bag,#scroll-top").css("visibility","visible");
+				} else{
+					$("#login,#shopping-bag,#scroll-top").css("visibility","hidden");
+				};
+			});
+			function checkScroll(){
+				var x = $(window).scrollTop();
+				if(x>300){
+					$("#title-banner-2").css({"animation-name":"title-1","visibility": "visible"});
+					$("#header-scroll").css("visibility","visible");
+				} else{
+					$("#header-scroll").css("visibility","hidden");
+				};
+				if(x>700){
+					$("#login,#shopping-bag,#scroll-top").css("visibility","visible");
+				} else{
+					$("#login,#shopping-bag,#scroll-top").css("visibility","hidden");
+				};
+			}
+			function add(){
+				if(i.split("c").length > 1){
+					$(".name_item").text(nameitemcolor[i.slice(6)-1].name+"");
+					$("#price_item").text(nameitemcolor[i.slice(6)-1].price+"");
+				} else {
+					$("#price_item").text(nameitem[i.slice(1)-1].price+"");
+					$(".name_item").text(nameitem[i.slice(1)-1].name+"");
+				};
+			}
+		});
+	</script>
+</head>
+<body>
+
+	<!-- HEADER -->
+
+	<!-- END HEADER -->
+
+
+	<!-- CONTENT -->
+	<section id="about">
+		<section id="about-wrapper">
+			<img src="image/product/banner-1.jpg" style="max-width: 100%;position: relative;z-index: 1;">
+		</section>
+		<section id="about-content" class="container">
+			<div id="about-description">
+				<section id="content">
+					<div class="in-content">
+						<ul class="content-ul-1">
+						
+						</ul>
+						<img src="image/Collection/color1.jpg" width="400px" height="400px" style="margin-bottom: 20px; " class="imgg_content">
+						<ul class="content-ul-1" style="text-align: center;width: 400px;">
+							<li><a href="#"><img src="image/Collection/color1.jpg" width="88px" height="88px" style="margin-right: 11.8px" class="imgg_content"></a></li>
+							<li><a href="#"><img src="image/Collection/color1.jpg" width="88px" height="88px" style="margin-right: 11.8px" class="imgg_content"></a></li>
+							<li><a href="#"><img src="image/Collection/color1.jpg" width="88px" height="88px" style="margin-right: 11.8px" class="imgg_content"></a></li>
+							<li><a href="#"><img src="image/Collection/color1.jpg" width="88px" height="88px" class="imgg_content"></a></li>
+						</ul>
+					</div>
+					<div class="in-content" id="m-content">
+						<p class="name"><span class="name_item">Iconic</span></p>
+						<p class="text note">Made from Sliver increase magic attack</p>
+						<p class="price note">Price : <span id="price_item">9,99 $</span></p>
+						<p class="size note">Size</p>
+						<input type="number" name="quantity" step="0.1" min="1" max="5" value="1.4" class="note" style="width:100px;margin-top:7px;">
+						<a href=""><div id="button-m-content" class="note"><span style="font-size: 15px">Add to cart</span><i class="fa fa-shopping-bag" aria-hidden="true" style="margin-left: 8px;"></i></div></a>
+					</div>
+					<div id="r-content">	
+						<p style="font-size: 16px;font-weight: bold;">RELATED PRODUCTS</p>
+						<ul class="content-ul-2">
+							<li><a href="#"><img src="image/Collection/color1.jpg" width="88px" height="88px" style="margin-bottom: 2px" class="imgg_content"></a></li>
+							<li style="margin-bottom: 15px"><span class="name_item related-name">Ring</span></li>
+							<li><a href="#"><img src="image/Collection/color1.jpg" width="88px" height="88px" style="margin-bottom: 2px" class="imgg_content"></a></li>
+							<li style="margin-bottom: 15px"><span class="name_item related-name">Ring</span></li>
+							<li><a href="#"><img src="image/Collection/color1.jpg" width="88px" height="88px" style="margin-bottom: 2px" class="imgg_content"></a></li>
+							<li style="margin-bottom: 15px"><span class="name_item related-name">Ring</span></li>
+							<li><a href="#"><img src="image/Collection/color1.jpg" width="88px" height="88px" style="margin-bottom: 2px" class="imgg_content"></a></li>
+							<li><span class="name_item related-name">Ring</span></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+
+		</section>
+	</section>
+	<!-- END CONTENT -->
+
+
+	<!-- FOOTER -->
+	
+	<!-- END FOOTER -->
+
+</body>
+</html>

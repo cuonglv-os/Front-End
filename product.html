@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Twinkle Jewelry </title>
+	<link href="css/common/bootstrap.min.css" rel="stylesheet">
+	<link href="css/common/font-awesome.min.css" rel="stylesheet">
+	<link href="css/common/style-allpage.css" rel="stylesheet">
+	<link href="css/common/style-header.css" rel="stylesheet">
+	<link href="css/common/style-footer.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style-about.css">
+	<link rel="stylesheet" type="text/css" href="css/style-product.css">
+	<script type="text/javascript" src="js/common/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/common/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#bg-content").css("height",$("#content").css("height"));
+			$(window).bind("load resize",function(){
+				$("#bg-content").css("height",$("#content").css("height"));
+			});
+			var nameitem = [
+			{"QUEENIE":"9,99$"},
+			{"TWIN STARS":"9,99$"},
+			{"MINI HEART":"9,99$"},
+			{"ICONIC":"9,99$"},
+			{"MIRROR":"9,99$"},
+			{"MINI BOW":"9,99$"},
+			{"DOUBLE LINE":"9,99$"},
+			{"CARROT":"9,99$"},
+			{"LOLITA (TOE RING)":"9,99$"},
+			{"ROYAL 2":"9,99$"},
+			{"ELIC":"9,99$"},
+			{"SPOT":"9,99$"},
+			{"SWEET HOME":"9,99$"},
+			{"EIRA":"9,99$"},
+			{"SHIMMER BEAR":"9,99$"}];
+			$.each(nameitem,function(index){
+				$.each(this, function (name, value) {
+					$("#nameitem-"+index).text(name);
+			      	$("#priceitem-"+index).text(value);
+			   	});
+			});
+			checkScroll();
+			$(window).bind("scroll",function(){
+				var scroll = $(window).scrollTop();
+				if(scroll>300){
+					$("#title-banner-2").css({"animation-name":"title-1","visibility": "visible"});
+					$("#header-scroll").css("visibility","visible");
+				} else{
+					$("#header-scroll").css("visibility","hidden");
+				};
+				if(scroll>700){
+					$("#login,#shopping-bag,#scroll-top").css("visibility","visible");
+				} else{
+					$("#login,#shopping-bag,#scroll-top").css("visibility","hidden");
+				};
+			});
+			function checkScroll(){
+				var x = $(window).scrollTop();
+				if(x>300){
+					$("#title-banner-2").css({"animation-name":"title-1","visibility": "visible"});
+					$("#header-scroll").css("visibility","visible");
+				} else{
+					$("#header-scroll").css("visibility","hidden");
+				};
+				if(x>700){
+					$("#login,#shopping-bag,#scroll-top").css("visibility","visible");
+				} else{
+					$("#login,#shopping-bag,#scroll-top").css("visibility","hidden");
+				};
+			};
+			$(".bag-li").click(function(){
+				alert('Thank you for shopping! Go to Bag to check your order.');
+			});
+			$(".heart-li").click(function(){
+				alert('Thank you for your feedback!');
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<!-- HEADER -->
+	
+	<!-- END HEADER -->
+
+
+	<!-- CONTENT -->
+	<section id="about">
+		<section id="about-wrapper">
+			<img src="image/product/banner-1.jpg" style="max-width: 100%;">
+		</section>
+		<section id="about-content" class="container">
+			<div id="about-description">
+				<div class="col-md-3 no-padding" id="select">
+					<div id="l-col">
+						<div id="t-l-col">Product filtering</div>
+						<div class="title-l-col">Value</div>
+						<ul class="ul-l-colll">
+							<li><a href="#">Low to High</a></li>
+							<li><a href="#">High to Low</a></li>
+						</ul>
+						<ul class="ul-l-colll">
+							<li><a href="#">Below 200$</a></li>
+							<li><a href="#">200$ > 300$</a></li>
+							<li><a href="#">300$ > 400$</a></li>
+							<li><a href="#">600$ > 700$</a></li>
+							<li><a href="#">Upper 700$</a></li>
+						</ul>
+						<div class="title-l-col">Materia</div>
+						<ul class="ul-l-colll">
+							<li><a href="#">Sliver</a></li>
+							<li><a href="#">Gold</a></li>
+							<li><a href="#">Gemstone</a></li>
+							<li><a href="#">Diamond</a></li>
+							<li><a href="#">Other</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-9 no-padding" id="content">
+					<div class="row no-margin">
+						<div id="all-item" class="items">
+							<script type="text/javascript">
+								for (var i = 1; i <= 15; i++) {
+									document.write('<div class="item"><a href="item-detail.html#'+i+'"><div class="box-hover"><div class="overlay"></div><div class="option"><ul><a href="item-detail.html#'+i+'"><li><i class="fa fa-search-plus" aria-hidden="true"></i></li></a><a><li class="bag-li"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li></a><a><li class="heart-li"><i class="fa fa-heart" aria-hidden="true"></i></li></a></ul></div></div></a><img class="img-item" src="image/Collection/'+i+'.jpg"><div class="detail-item"><span id="nameitem-'+(i-1)+'" class="name-item"></span><br><span id="priceitem-'+(i-1)+'" class="price-item">$</span></div></div>');
+								}
+							</script>	
+								
+						</div>
+						<div class="next-page" >
+							<ul>
+								<li><a href="#" class="np-arrow"><</a></li>
+								<li><a href="#" class="np-a">1</a></li>
+								<li><a href="#" class="np-a">2</a></li>
+								<li><a>...</a></li>
+								<li><a href="#" class="np-a">69</a></li>
+								<li><a href="#" class="np-arrow">></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- END CONTENT -->
+
+
+	<!-- FOOTER -->
+	
+	<!-- END FOOTER -->
+
+</body>
+</html>

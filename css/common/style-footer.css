@@ -1,0 +1,95 @@
+/*FOOTER*/
+#footer{
+   float: left;
+   clear: both;
+   width: 100%;
+   height: 535px;
+   background-color: #383838;
+}
+#footer #sub-to-new{
+   float: left;
+   width: 100%;
+   border-top: 0.5px solid #f4f4f4;
+}
+#footer #sub-to-new .title{
+   font-family: "Avo";
+   font-size: 36px;
+   line-height: 90px;
+   color: #bcbcbc;
+}
+#footer #sub-to-new .email{
+   background-color: #383838;
+   border: 1px solid #f4f4f4;
+   width: 80%;
+   height: 40px;
+   margin-top: 30px;
+   font-family: "Avo";
+   font-size: 15px;
+   padding-left: 15px;
+   color: #bcbcbc;
+}
+#footer #sub-to-new .box-email .fa{
+   position: absolute;
+   color: #bcbcbc;
+   font-size: 24px;
+   bottom: 10px;
+   right: 90px;
+}
+#footer #sub-to-new .follow{
+   font-family: "Avo";
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 50px;
+   color: #bcbcbc;
+   padding-left: 50px;
+}
+#footer #sub-to-new ul{
+   text-align: left;
+}
+#footer #sub-to-new li{
+   list-style: none;
+   display: inline-block;
+   padding-right: 20px;
+}
+#footer #sub-to-new .fa{
+   font-size: 30px;
+   color: #bcbcbc;
+   transition: all 0.3s;
+}
+#footer #sub-to-new .fa:hover{
+   color: #fff;
+}
+#footer #info a{
+   color: #bcbcbc;
+}
+#footer #info ul{
+   font-family: "Avo";
+   color: #bcbcbc;
+   list-style: none;
+   padding-top: 50px;
+}
+#footer #info li{
+   line-height: 30px;
+}
+#footer #info li a{
+   transition: all 0.3s;
+}
+#footer #info li a:hover{
+   color: #fff;
+   text-decoration: none;
+}
+#footer .title-footer{
+   font-size: 22px;
+   padding-bottom: 15px;
+   color: #fff;
+}
+#footer #sign{
+   text-align: center;
+   padding-top: 100px;
+}
+#footer .sign{
+   font-family: "Hi";
+   font-size: 36px;
+   color: #f4f4f4;
+   padding-bottom: 30px;
+}

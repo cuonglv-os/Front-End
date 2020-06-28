@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Twinkle Jewelry </title>
+	<link href="css/common/bootstrap.min.css" rel="stylesheet">
+	<link href="css/common/font-awesome.min.css" rel="stylesheet">
+	<link href="css/common/style-allpage.css" rel="stylesheet">
+	<link href="css/common/style-header.css" rel="stylesheet">
+	<link href="css/common/style-footer.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:400,400i,700" rel="stylesheet">
+	<link href="css/style-shopping-bag.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/common/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/common/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<!-- HEADER -->
+
+	<!-- END HEADER -->
+
+
+	<!-- CONTENT -->
+	<section id="bag">
+		<section style="padding-bottom: 50px;">
+			<img src="image/shopping-bag/shopping-bag.jpg" style="max-width: 100%">
+		</section>
+		<section id="bag-wrapper" class="container">
+			<div id="bag-content">
+				<div id="nav-tab">
+					<div class="col-md-3 active">
+						<a href="#order" role="tab" data-toggle="tab">ORDER</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#shipping" role="tab" data-toggle="tab">SHIPPING</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#payment" role="tab" data-toggle="tab">PAYMENT</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#confirmation" role="tab" data-toggle="tab">CONFIRMATION</a>
+					</div>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="order">
+						<div id="tab">
+							<div class="col-md-3 section">
+								Item
+							</div>
+							<div class="col-md-3 section">
+								Price
+							</div>
+							<div class="col-md-3 section">
+								Quantity
+							</div>
+							<div class="col-md-3 section">
+								Totalprice
+							</div>
+						</div>
+						<div id="tab-content">
+							<div class="row no-margin">
+								<div class="col-md-3">
+									<div>
+										<img src="image/home/product-1/prod-3.jpg">
+										<span>Rings</span>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<p class="no-margin price">9,99$</p>
+								</div>
+								<div class="col-md-3">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+									1
+									<i class="fa fa-minus" aria-hidden="true"></i>
+								</div>
+								<div class="col-md-3">
+									<p class="no-margin price">9,99$</p>
+								</div>
+							</div>
+							<div class="row no-margin">
+								<div class="col-md-3">
+									<div>
+										<img src="image/home/product-1/prod-3.jpg">
+										<span>Rings</span>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<p class="no-margin price">9,99$</p>
+								</div>
+								<div class="col-md-3">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+									1
+									<i class="fa fa-minus" aria-hidden="true"></i>
+								</div>
+								<div class="col-md-3">
+									<p class="no-margin price">9,99$</p>
+								</div>
+							</div>
+							
+							<div class="row no-margin" style="border-bottom: 0; height: 150px;">
+								<div class="col-md-3" style="float: right; font-size: 24px; line-height: 30px; padding-top: 30px;">
+									<span style="font-weight: 400; font-size: 18px; padding-right: 20px;">total</span><span style="color: #e92f46;">39,39$</span>
+								</div>
+							</div>
+							<div class="col-md-3" id="button-cs">
+								<a href="">Continue shopping</a>
+							</div>
+							<div class="col-md-3" id="button-pc">
+								<a href="#shipping" role="tab" data-toggle="tab"> Proceed to Checkout <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="shipping">
+						<div class="col-md-6" style="padding-left: 70px;">
+							<p class="no-margin shipping-title">First name</p>
+							<input type="text" name="" placeholder="Hai" class="input">
+							<p class="no-margin shipping-title">Second name</p>
+							<input type="text" name="" placeholder="Quy" class="input">
+							<p class="no-margin shipping-title">Phone NUMBER</p>
+							<input type="text" name="" placeholder="+34 911 333 296" class="input">
+						</div>
+						<div class="col-md-6" style="padding-left: 50px">
+							<p class="no-margin shipping-title">Address</p>
+							<input type="text" name="" placeholder="YenHoa" class="input">
+							<p class="no-margin shipping-title">Zip</p>
+							<input type="text" name="" placeholder="10118" class="input">
+							<p class="no-margin shipping-title">City</p>
+							<input type="text" name="" placeholder="HaNoi" class="input">
+						</div>
+						<div class="col-md-3" id="button-cs" style="margin: 60px 0 0 70px;">
+								<a href="#order" role="tab" data-toggle="tab">Continue shopping</a>
+							</div>
+							<div class="col-md-3" id="button-pc" style="margin: 60px 55px 0px 0;">
+								<a href="#payment" role="tab" data-toggle="tab"> Proceed to Checkout <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+							</div>
+					</div>
+					<div class="tab-pane fade" id="payment">
+						<div class="payment">
+							<div class="col-md-12">
+								<p class="no-margin shipping-title">Card number</p>
+								<input type="text" name="" placeholder="1000 2000 3000 4000" class=" input">
+							</div>
+							<div class="col-md-6">
+								<p class="no-margin shipping-title">First name</p>
+								<input type="text" name="" placeholder="Hai" class="input">
+							</div>
+							<div class="col-md-6">
+								<p class="no-margin shipping-title">Address</p>
+								<input type="text" name="" placeholder="YenHoa" class="input">
+							</div>
+							<div class="col-md-12">
+								<p class="no-margin shipping-title">Card holder name</p>
+								<input type="text" name="" placeholder="1000 2000 3000 4000" class=" input">
+							</div>
+						</div>
+						<div class="col-md-3" id="button-cs" style="margin: 60px 0 0 100px;">
+								<a href="#shipping" role="tab" data-toggle="tab">BACK to Shipping</a>
+							</div>
+							<div class="col-md-3" id="button-pc" style="margin: 60px 80px 0px 0;">
+								<a href="#confirmation" role="tab" data-toggle="tab">  PLACE ORDER:$39,96$  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+							</div>
+					</div>
+					<div class="tab-pane fade" id="confirmation">
+						<i class="fa fa-check" aria-hidden="true"></i>
+						<p class="no-margin confirmation-title">Congratulation!</p>
+						<p class="no-margin confirmation-title-2">Your order has been accepted</p>
+						<div class="col-md-3" id="button-pc" style="float: none; margin: 0 auto; margin-top: 50px;">
+								<a href="home.html">BACK to HOME</a>
+							</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+	</section>
+	<!-- END CONTENT -->
+
+
+	<!-- FOOTER -->
+	
+	<!-- END FOOTER -->
+
+
+    <script type="text/javascript">
+    	$('#mymodal').modal options
+    </script>
+    <script type="text/javascript">
+    	 $('#scroll-top').click(function(){
+    	 	var offset = $(this).scrollTop();
+          $("html, body").delay(150).animate({ scrollTop: 0 }, 700);
+          return false;
+      });
+    	$(window).on('scroll', function () {
+    		var offset = $(this).scrollTop();
+	        if(offset > 300) {
+	          $("#header-scroll").css('position', "fixed");
+	          $("#header-scroll").css('opacity', "1");
+	          $("#header-scroll").css('z-index', "999999999");
+	        } else {
+	          $("#header-scroll").css('opacity', "0");
+	        }
+	        if(offset > 500) {
+	        	$(".box").css('opacity', "1");
+	        } else {
+	        	$(".box").css('opacity', "0");
+	        }
+    });
+    </script>
+    <script type="text/javascript">
+    	$('.box').tooltip(options)
+    </script>
+    <script type="text/javascript">
+    	$('#myTab a').click(function (e) {
+ 		e.preventDefault()
+  		$(this).tab('show')
+		})
+    </script>
+</body>
+</html>

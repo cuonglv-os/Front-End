@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Twinkle Jewelry </title>
+	<link href="css/common/bootstrap.min.css" rel="stylesheet">
+	<link href="css/common/font-awesome.min.css" rel="stylesheet">
+	<link href="css/common/style-allpage.css" rel="stylesheet">
+	<link href="css/common/style-header.css" rel="stylesheet">
+	<link href="css/common/style-footer.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:400,400i,700" rel="stylesheet">
+	<link href="css/style-about.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/common/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/common/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<!-- HEADER -->
+
+	<!-- END HEADER -->
+
+
+	<!-- CONTENT -->
+	<section id="about">
+		<section id="about-wrapper">
+			<img src="image/about/about-us-3.jpg" style="max-width: 100%;">
+		</section>
+		<section id="about-content" class="container">
+			<div id="about-description">
+				<div class="col-md-3 no-padding" id="select">
+					<ul>
+						<li><a href="about-us.html">About us</a></li>
+						<li><a href="our-story.html">Our Story</a></li>
+						<li class="active"><a href="our-company.html">Our Company</a></li>
+					</ul>
+				</div>
+				<div class="col-md-9 no-padding" id="content">
+					<p class="no-margin" id="description-title">
+						Twinkle Jewelry
+					</p>
+					<p class="no-margin description-content">
+						Founded in September 2013, Twinkle was born with the desire of bringing high-quality silver jewelry to lovely girls and the mission of developing the handmade silver jewelry industry in Viet Nam.
+					</p>	
+
+					<p class="no-margin description-content">
+						Twinkle started the very first step as an jewelry online shop, which lead to such difficulties and challenges to overcome. At the beginning, not many customers came to our place because they don’t usually have the habit of shopping online for silver jewelry. However, after a short time, we gradually gain their trust by our inspirational designs, receiving lots of good feedbacks from them. Twinkle is on the way of development. This is proved by our two stores at the heart of Sai Gon: Nguyen Hue Blv and Ly Tu Trong.
+					</p>
+						
+					<p class="no-margin description-content">
+						Twinkle’s products is made of  sterling silver 925 and handcrafted from the stage of smelting to polishing. For that reason, each product is unique despite of the same design, which differs from mass production. Moreover, Twinkle’s design features a look of youth, elegance and simplicity that stands out from the crowd. We pay attention to every detail of each product, blowing “a soul” to silver jewelry. Besides, Twinkle has a unique package which is friendly to environment and simple.
+					</p>
+
+					<p class="no-margin description-content">
+						Customer plays an important role to Twinkle. Therefore, we ensure the best shopping experience by good and professional service, especially the guarantee policy during usage. Silver is a precious metal with high value. No matter it decolors or gets  broken, Twinkle is certain to help you repair and bring back the sparkling look for a very long time.
+					</p>
+					
+					<p class="no-margin description-content">
+						Twinkle desires to develop as a brand of handmade silver jewelry domestically and internationally. We hope that you will wear Twinkle products with pride and love for jewelry made in Vietnam.
+					</p>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- END CONTENT -->
+
+	
+	<!-- FOOTER -->
+	
+	<!-- END FOOTER -->
+
+    <script type="text/javascript">
+    	$('#mymodal').modal options
+    </script>
+    <script type="text/javascript">
+    	 $('#scroll-top').click(function(){
+    	 	var offset = $(this).scrollTop();
+          $("html, body").delay(150).animate({ scrollTop: 0 }, 700);
+          return false;
+      });
+    	$(window).on('scroll', function () {
+    		var offset = $(this).scrollTop();
+	        if(offset > 300) {
+	          $("#header-scroll").css('position', "fixed");
+	          $("#header-scroll").css('opacity', "1");
+	          $("#header-scroll").css('z-index', "999999999");
+	        } else {
+	          $("#header-scroll").css('opacity', "0");
+	        }
+	        if(offset > 500) {
+	        	$(".box").css('opacity', "1");
+	        } else {
+	        	$(".box").css('opacity', "0");
+	        }
+    });
+    </script>
+    <script type="text/javascript">
+    	$('.box').tooltip(options)
+    </script>
+</body>
+</html>

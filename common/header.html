@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="../css/common/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/common/font-awesome.min.css" rel="stylesheet">
+	<link href="../css/common/style-allpage.css" rel="stylesheet">
+	<link href="../css/common/style-header.css" rel="stylesheet">
+	<script type="text/javascript" src="../js/common/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/common/bootstrap.min.js"></script>
+<!-- 	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).bind("scroll",function(){
+				var scroll = $(window).scrollTop();
+				if(scroll>300){
+					$("#title-banner-2").css({"animation-name":"title-1","visibility": "visible"});
+					$("#header-scroll").css("visibility","visible");
+				} else{
+					$("#header-scroll").css("visibility","hidden");
+				};
+				if(scroll>700){
+					$("#login,#shopping-bag,#scroll-top").css("visibility","visible");
+				} else{
+					$("#login,#shopping-bag,#scroll-top").css("visibility","hidden");
+				};
+			});
+			function checkScroll(){
+				var x = $(window).scrollTop();
+				if(x>300){
+					$("#title-banner-2").css({"animation-name":"title-1","visibility": "visible"});
+					$("#header-scroll").css("visibility","visible");
+				} else{
+					$("#header-scroll").css("visibility","hidden");
+				};
+				if(x>700){
+					$("#login,#shopping-bag,#scroll-top").css("visibility","visible");
+				} else{
+					$("#login,#shopping-bag,#scroll-top").css("visibility","hidden");
+				};
+			};
+		});
+	</script> -->
+</head>
+<body>
+	<section id="header">
+		<section id="header-scroll">
+			<div id="header-scroll-center">
+				<section class="header-scroll-content container" style="width: 100%; padding-right: 0px;">
+					<a href="home.html">
+						<img src="../image/home/logo-2.png" style="height: 30px; margin-top: 10px; float: left;">
+					</a>
+					<div id="header-navigator">
+						<ul class="no-margin">
+							<li><a href="home.html">Home</a></li>
+							<li class="drop-down"><a href="about-us.html">About</a>
+								<div class="temp"></div>
+								<div class="drop-down-content drop-down-content-2">
+									<ul>	
+										<li><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+										<li><a href="about-us.html">About us</a></li>
+										<li><a href="our-story.html">Our Story</a></li>
+										<li><a href="our-company.html">Our Company</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="drop-down"><a href="product.html">Products</a>
+								<div class="temp"></div>
+								<div class="drop-down-content">
+									<ul>	
+										<li><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+										<li><a href="collection.html">Collection</a></li>
+										<li><a href="#">Ring</a></li>
+										<li><a href="#">Earrings</a></li>
+										<li><a href="#">Bracelet</a></li>
+										<li><a href="#">Necklace</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="drop-down"><a href="about-products.html">Customer info</a>
+								<div class="temp"></div>
+								<div class="drop-down-content drop-down-content-2 drop-down-content-3">
+									<ul>	
+										<li><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+										<li><a href="about-products.html">About Products</a></li>
+										<li><a href="size-guide.html">Size Guide</a></li>
+										<li><a href="shipping-return.html">Shipping & Return</a></li>
+										<li><a href="payment.html">Payment</a></li>
+										<li><a href="vip.html">VIP</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div id="triangle-bottomright"><p style="margin-top:-37px;text-align: center;"><a data-toggle="modal" data-target="#dangnhap" id="login_click">Login</a> / <a data-toggle="modal" data-target="#dangky" id="register_click">Register</a></li></p></div>
+
+				</section>
+			</div>
+		</section>
+
+		<section id="button-scroll">
+			<!-- <section id="login" class="btn btn-default box" data-toggle="tooltip" data-placement="left" title="Login">
+				<i class="fa fa-sign-in" data-toggle="modal" data-target="#dangnhap" aria-hidden="true"></i>
+			</section> -->
+			<!-- <section id="shopping-bag" class="btn btn-default box" data-toggle="tooltip" data-placement="left" title="Bag">
+				<i class="fa fa-shopping-bag" data-toggle="modal" data-target="#bag-content" aria-hidden="true"></i>
+				<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="bag-content">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div id="nav-tab">
+								<div class="col-md-12 active">
+									<a href="#order" role="tab" data-toggle="tab">ORDER</a>
+								</div>
+							</div>
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="order">
+									<div id="tab">
+										<div class="col-md-3 section">
+											Item
+										</div>
+										<div class="col-md-3 section">
+											Price
+										</div>
+										<div class="col-md-3 section">
+											Quantity
+										</div>
+										<div class="col-md-3 section">
+											Totalprice
+										</div>
+									</div>
+									<div id="tab-content">
+										<div class="row no-margin">
+											<div class="col-md-3">
+												<div>
+													<img src="../image/home/product-1/prod-3.jpg">
+													<span style="font-weight: 700; font-size: 18px; color: #383838;">Rings</span>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<p class="no-margin price">9,99$</p>
+											</div>
+											<div class="col-md-3">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+												1
+												<i class="fa fa-minus" aria-hidden="true"></i>
+											</div>
+											<div class="col-md-3">
+												<p class="no-margin price">9,99$</p>
+											</div>
+										</div>
+										<div class="row no-margin">
+											<div class="col-md-3">
+												<div>
+													<img src="../image/home/product-1/prod-3.jpg">
+													<span style="font-weight: 700; font-size: 18px; color: #383838;">Rings</span>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<p class="no-margin price">9,99$</p>
+											</div>
+											<div class="col-md-3">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+												1
+												<i class="fa fa-minus" aria-hidden="true"></i>
+											</div>
+											<div class="col-md-3">
+												<p class="no-margin price">9,99$</p>
+											</div>
+										</div>
+										<div class="row no-margin" style="border-bottom: 0; height: 150px;">
+											<div class="col-md-3" style="float: right; font-size: 24px; line-height: 30px; padding-top: 30px;">
+												<span style="font-weight: 700; font-size: 18px; padding-right: 20px; color: #383838;">total</span><span style="color: #e92f46; font-size: 24px;">39,39$</span>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				
+			</section> -->
+			<section id="scroll-top" class="btn btn-default box" data-toggle="tooltip" data-placement="left" title="Scroll top">
+				<i class="fa fa-arrow-up" aria-hidden="true"></i>
+			</section>
+		</section>
+		
+
+		<section id="header-wrapper" class="container">
+			<div id="logo">
+				<a href="home.html"><img src="../image/home/logo.png" class="logo"></a>
+			</div>
+			<div id="header-content" class="container">
+				<div class="col-md-2 no-padding">
+					<ul style="margin-bottom: 5px;">
+						<li class=""><a data-toggle="modal" data-target="#dangnhap" id="login_click">Login</a> / <a data-toggle="modal" data-target="#dangky" id="register_click">Register</a></li>
+
+					<!-- LOGIN	 -->
+					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="dangnhap">
+							<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+	  							<form action="" method="POST">
+	      							<p id="sign-in">Login</p>
+	      							<p class="title">Email</p>
+
+	      							<!-- BOX EMAIL -->
+	      							<input type="Email" name="email_login" placeholder="Usename" class="input">
+	      							
+	      							<p class="title">Password</p>
+	      							
+	      							<!-- BOX PASSWORD -->
+	      							<input type="Password" name="password_login" placeholder="Password" class="input">
+	      							
+	      							<button type="submit" class="button button-signin">
+	  									<p class="no-margin">Login</p>
+	  								</button>
+
+	      							<p class="no-margin popover-cont">Use your social account</p>
+	      							<div class="container no-padding">
+	      								<div class="col-md-4">
+			      							<a href="#">
+				      							<div class=" button button-social" id="button-fb">
+				      								<p class="no-margin">Facebook</p>
+				      							</div>
+			      							</a>
+		      							</div>
+		      							<div class="col-md-4">
+			      							<a href="#">
+				      							<div class=" button button-social" id="button-g">
+				      								<p class="no-margin">Google +</p>
+				      							</div>
+			      							</a>
+		      							</div>
+		      							<div class="col-md-4">
+			      							<a href="#">
+				      							<div class=" button button-social" id="button-tw">
+				      								<p class="no-margin">Twitter</p>
+				      							</div>
+			      							</a>
+		      							</div>
+	      							</div>
+	      						</form>
+	  						</div>
+							</div>
+					</div>
+					<!-- END LOGIN -->
+
+					<!-- REGISTER	 -->
+					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="dangky">
+							<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+	  							<form action="" method="POST">
+	      							<p id="sign-in">Register</p>
+	      							<p class="title">Email</p>
+	      							<input type="Email" name="email_register" placeholder="Usename" class="input">
+	      							<p class="title">Password</p>
+	      							<input type="Password" name="password_register" placeholder="Password" class="input">
+	      							<p class="title">Verify Password</p>
+	      							<input type="Password" name="password_verify_register" placeholder="Password" class="input">
+	  								<button type="submit" class="button button-signin">
+	  									<p class="no-margin">Register</p>
+	  								</button>
+	      						</form>
+	  						</div>
+							</div>
+					</div>
+					<!-- END REGISTER -->
+
+					</ul>
+					<ul style="margin-bottom: 5px;">
+						<li><a href="#">VI</a></li>
+						<li>|</li>
+						<li class="active"><a href="#">EN</a></li>
+					</ul>
+					<input type="text" name="" placeholder="Search" class="box-search">
+					<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+					<ul style="margin-top: 5px;">
+						<li><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+						<li style="padding-left: 10px;"><a href="shopping-bag.html" target="_blank">Shopping Bag</a></li>
+						<li class="active" style="padding-left: 10px;">( 2 )</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="header-menu-wrapper" class="container">
+			<div id="header-navigator">
+				<ul class="no-margin">
+					<li><a href="home.html">Home</a></li>
+					<li class="drop-down"><a href="about-us.html">About</a>
+						<div class="temp"></div>
+						<div class="drop-down-content drop-down-content-2">
+							<ul>	
+								<li><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+								<li><a href="about-us.html">About us</a></li>
+								<li><a href="our-story.html">Our Story</a></li>
+								<li><a href="our-company.html">Our Company</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="drop-down"><a href="product.html">Products</a>
+						<div class="temp"></div>
+						<div class="drop-down-content">
+							<ul>	
+								<li><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+								<li><a href="collection.html">Collection</a></li>
+								<li><a href="#">Ring</a></li>
+								<li><a href="#">Earrings</a></li>
+								<li><a href="#">Bracelet</a></li>
+								<li><a href="#">Necklace</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="drop-down"><a href="about-products.html">Customer info</a>
+						<div class="temp"></div>
+						<div class="drop-down-content drop-down-content-2 drop-down-content-3">
+							<ul>	
+								<li><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+								<li><a href="about-products.html">About Products</a></li>
+								<li><a href="size-guide.html">Size Guide</a></li>
+								<li><a href="shipping-return.html">Shipping & Return</a></li>
+								<li><a href="payment.html">Payment</a></li>
+								<li><a href="vip.html">VIP</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</section>
+	</section>
+
+
+	<!-- <script type="text/javascript">
+    	$('#mymodal').modal options
+    </script>
+    <script type="text/javascript">
+    	 $('#scroll-top').click(function(){
+    	 	var offset = $(this).scrollTop();
+          $("html, body").delay(150).animate({ scrollTop: 0 }, 700);
+          return false;
+      });
+    	$(window).on('scroll', function () {
+    		var offset = $(this).scrollTop();
+	        if(offset > 200) {
+	          $("#header-scroll").css('position', "fixed");
+	          $("#header-scroll").css('opacity', "1");
+	          $("#header-scroll").css('z-index', "999999999");
+	        } else {
+	          $("#header-scroll").css('opacity', "0");
+	        }
+	        if(offset > 500) {
+	        	$(".box").css('opacity', "1");
+	        } else {
+	        	$(".box").css('opacity', "0");
+	        }
+    });
+    </script>
+    <script type="text/javascript">
+    	$('.box').tooltip(options)
+    </script> -->
+</body>
+</html>

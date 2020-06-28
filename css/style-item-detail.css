@@ -1,0 +1,101 @@
+/*BODY*/
+#about-content{
+   padding: 0px 0 100px 0;
+   margin-top: -1px;
+   color: #383838;
+   font-family: "Avo";
+   font-size: 15px;
+}
+#about a{
+   color: #383838;
+}
+#content{
+   background-color: #fff;
+   border-radius: 3px;
+   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);
+   padding: 30px;
+   width: 100%;
+   float: left;
+   clear: both;
+   position: relative;
+   margin: 0 auto;
+}
+.in-content{
+   position: relative;
+   float: left;
+}
+.content-ul-1{
+   list-style: none;
+}
+#m-content{
+   padding-left: 40px;
+}
+#m-content a{
+   color: white;
+   line-height: 27px;
+}
+#m-content a:hover{
+   text-decoration: none;
+}
+#button-m-content{
+   width: 170px;
+   height: 30px;
+   background: #103667;
+   text-align: center;
+   border-radius: 20px;
+   margin-top: 25px;
+   text-transform: uppercase;
+   transition: all 0.3s;
+}
+#m-content a:hover #button-m-content{
+   letter-spacing: 1px;
+}
+.content-ul-1 li{
+   display: inline-block;
+}
+.name{
+   font-family: "Avo";
+   font-size: 52px;
+   font-weight: bold;
+   position: relative;
+   float: left;
+   top: 30px;
+   text-transform: uppercase;
+}
+.note{
+   float: left;
+   clear: both;
+   font-size: 17px;
+}
+.text{
+   font-style: italic;
+   margin-top: 80px;
+}
+#price_item{
+   font-family: "Aller";
+   font-size: 18px;
+   color: #e92f46;
+}
+.price{
+   margin-top: 7px;
+}
+.size{
+   margin-top: 7px;
+}
+#r-content{
+   height: auto;
+   position: relative;
+   top: 22px;
+   float: right;
+   margin-right: -30px;
+   width: 260px;
+   text-align: center;
+   border-left: 1px solid #777777;
+}
+.content-ul-2{
+   list-style: none;
+   margin-top: 25px;
+}
+.related-name{
+   text-transform: capitalize;
+}

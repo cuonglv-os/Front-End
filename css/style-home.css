@@ -1,0 +1,280 @@
+﻿/*BODY*/
+.in-slide{
+   position: absolute;
+   left: -50px;
+}
+#body #slide .carousel-caption{
+   width: 500px;
+   height: auto;
+   position: relative;
+   text-shadow: none;
+   text-align: left;
+   top: 300px;
+   left: 120px;
+}
+#body #slide .carousel-caption .title-slide-1{
+   font-family: "Hi";
+   font-size: 48px;
+   animation-name: title-1;
+   animation-duration: 2.5s;
+}
+@keyframes title-1{
+   0%{opacity:0; margin-left: -70px;}
+   100%{opacity:1; margin-left: -20;}
+}
+#body #slide .carousel-caption .title-slide-2{
+   font-family: "Lato";
+   font-size: 69px;
+   animation-name: title-2;
+   animation-duration: 2.5s;
+}
+@keyframes title-2{
+   0%{opacity:0;}
+   100%{opacity:1;}
+}
+#body #slide .carousel-caption .title-slide-3{
+   font-family: "Lato";
+   font-style: italic;
+   font-size: 18px;
+   text-align: right;
+   padding: 20px 150px 0 0;
+   animation-name: title-3;
+   animation-duration: 2.5s;
+}
+@keyframes title-3{
+   0%{opacity:0;}
+   20%{opacity: 0;}
+   100%{opacity:1;}
+}
+#body #slide .carousel-caption a{
+   font-family: "Avo";
+   font-size: 14px;
+   color: #fff;
+   text-decoration: none;
+   text-align: center;
+   line-height: 25px;
+   transition: all 0.1s;
+}
+#body #slide .carousel-caption .button-showmore{
+   width: 25%;
+   height: 30px;
+   background-color: #fafafa;
+   color: #757575;
+   line-height: 30px;
+   border-radius: 15px;
+   position: absolute;
+   top: 475px;
+   transition: all 0.3s;
+}
+#body #slide .carousel-caption .button-showmore:hover{
+   letter-spacing: 2px;
+}
+#body #body-products-title{
+   height: 150px;
+   font-family: "Hi";
+   font-size: 48px;
+   text-align: center;
+   line-height: 100px;
+}
+#body #body-product-1{
+   height: 600px;
+}
+#body .product-border{
+   width: 1015px;
+   height: 500px;
+   border-radius: 3px;
+   position: absolute;
+   background-color: #fff;
+   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);
+   z-index: -9999;
+   right: 65px;
+   margin-top: 100px;
+}
+#body .product-content{
+   position: absolute;
+   top: 50px;
+   left: 50px;
+}
+#body .product-content .title-product-1{
+   font-family: "Hi";
+   font-size: 36px;
+   color: #383838;
+   padding-bottom: 20px;
+}
+#body .product-content .title-product-2{
+   font-family: "Avo";
+   font-style: italic;
+   font-size: 21px;
+   color: #383838;
+   padding-bottom: 5px;
+}
+#body .product-content .title-product-3{
+   font-family: "Avo";
+   font-size: 14px;
+   color: #383838;
+}
+#body #body-product-1 .col-md-5 a{
+   text-decoration: none;
+   color: #383838;
+   font-family: "Avo";
+   font-size: 14px;
+   text-align: center;
+   line-height: 25px;
+}
+#body #body-product-1 .button-product{
+   position: absolute;
+   left: 50px;
+   bottom: 30px;
+   width: 23%;
+   height: 30px;
+   background-color: #fafafa;
+   color: #757575;
+   line-height: 30px;
+   border-radius: 15px;
+   transition: all 0.3s;
+}
+#body .button-product:hover{
+   letter-spacing: 2px;
+}
+#body .box-hover{
+   width: 160px;
+   height: 175px;
+   position: absolute;
+   bottom: 0px;
+   z-index: 99999;
+} 
+#body .box-hover .overlay{
+   width: 160px;
+   height: 175px;
+   position: absolute;
+   top: -30px;
+   background-color: rgba(0,0,0,0.1);
+   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);
+   opacity: 0;
+   transition: all 0.3s;
+} 
+#body .box-hover:hover > .overlay{
+   opacity: 1;
+}
+#body .box-hover .option{
+   position: absolute;
+   height: 0px;
+   bottom: 60px;
+   width: 100%;
+   opacity: 0;
+   transition: all 0.4s;
+}  
+#body .box-hover:hover > .option{
+   opacity: 1;
+   height: 40px;
+   bottom: 30px;
+}
+#body .box-hover a{
+   text-decoration: none;
+   color: #383838;
+} 
+#body .box-hover ul{
+   background-color: #f4f4f4;
+}           
+#body .box-hover li{
+   display: inline-block;
+   text-align: center;
+   padding: 0 16.5px;
+   line-height: 40px;
+   transition: all 0.3s;
+}
+#body .box-hover li:hover{
+   color: #f4f4f4;
+   background-color: #757575;
+}
+#body .box-hover li .fa{
+   font-size: 18px;
+}
+#body .name{
+   font-family: "Avo";
+   font-weight: 700;
+   text-align: center;
+   color: #383838;
+   width: 90%;
+   margin: 0 auto;
+}
+#body .name b{
+   float: left;
+}
+#body .name em{
+   color: #e92f46;
+   font-style: normal;
+   float: right;
+}
+#body .box-hover-sale{
+   width: 100%;
+   height: 208px;
+   position: absolute;
+   top: 50px;
+   left: 70px;
+   text-align: center;
+   font-family: "Avo";
+   color: #fff;
+   z-index: 99999;
+}
+#body .box-hover-sale-2{
+   top: 40px;
+}
+#body .box-hover-sale .box-hover-sale-bg{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0px;
+   background-color: rgba(0,0,0,0.2);
+   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);
+   z-index: -999999999;
+   opacity: 0;
+   transition: all 0.3s;
+}
+#body .box-hover-sale:hover > .box-hover-sale-bg{
+   opacity: 1;
+}
+#body .box-hover-sale .sale-content{
+   font-family: "Avo";
+   font-weight: 700;
+   font-size: 30px;
+   padding: 55px 0 10px 0;
+}
+#body .box-hover-sale .button-sale{
+   width: 24%;
+   height: 30px;
+   margin: 0 auto;
+   line-height: 30px;
+   border-radius: 15px;
+   background-color: #fafafa;
+   color: #757575;
+   transition: all 0.3s;
+}
+#body .box-hover-sale .button-sale:hover{
+   letter-spacing: 2px;
+}
+
+#body #body-product-2{
+   margin-top: 100px;
+   height: 600px;
+}
+#body #body-product-2 .col-md-5 a{
+   text-decoration: none;
+   color: #383838;
+   font-family: "Avo";
+   font-size: 14px;
+   text-align: center;
+   line-height: 25px;
+}
+#body #body-product-2 .button-product{
+   position: absolute;
+   right: 50px;
+   bottom: 30px;
+   width: 23%;
+   height: 30px;
+   background-color: #fafafa;
+   color: #757575;
+   line-height: 30px;
+   border-radius: 15px;
+   transition: all 0.3s;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Collection</title>
+	<link href="css/common/bootstrap.min.css" rel="stylesheet">
+	<link href="css/common/font-awesome.min.css" rel="stylesheet">
+	<link href="css/common/style-allpage.css" rel="stylesheet">
+	<link href="css/common/style-header.css" rel="stylesheet">
+	<link href="css/common/style-footer.css" rel="stylesheet">
+	<link href="css/style-collection.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/common/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/common/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(window).on('scroll', function () {
+    		var offset = $(this).scrollTop();
+	        if(offset > 300) {
+	          $("#header-scroll").css('position', "fixed");
+	          $("#header-scroll").css('opacity', "1");
+	          $("#header-scroll").css('z-index', "999");
+	        } else {
+	          $("#header-scroll").css('opacity', "0");
+	        }
+	        if(offset > 700) {
+	        	$(".box").css('opacity', "1");
+	        } else {
+	        	$(".box").css('opacity', "0");
+	        }
+    	});
+		$(document).ready(function(){
+			$('#scroll-top').click(function(){
+	        	$("html, body").delay(150).animate({ scrollTop: 0 }, 700);
+	        	return false;
+	      	});
+			$("#bg-content").css("height",$("#content").css("height"));
+			$(window).bind("load resize",function(){
+				$("#bg-content").css("height",$("#content").css("height"));
+			});
+			var nameitem = [
+			{"QUEENIE":"9,99 $"},
+			{"TWIN STARS":"9,99 $"},
+			{"MINI HEART":"9,99 $"},
+			{"ICONIC":"9,99 $"},
+			{"MIRROR":"9,99 $"},
+			{"MINI BOW":"9,99 $"},
+			{"DOUBLE LINE":"9,99 $"},
+			{"CARROT":"9,99 $"},
+			{"LOLITA (TOE RING)":"9,99 $"},
+			{"ROYAL 2":"9,99 $"},
+			{"ELIC":"9,99 $"},
+			{"SPOT":"9,99 $"},
+			{"SWEET HOME":"9,99 $"},
+			{"EIRA":"9,99 $"},
+			{"SHIMMER BEAR":"9,99 $"},
+			{"LOLA 2":"9,99 $"}];
+			$.each(nameitem,function(index){
+				$.each(this, function (name, value) {
+					$("#nameitem-"+index).text(name);
+			      	$("#priceitem-"+index).text(value);
+			   	});
+			});
+			var nameitemcolor = [
+			{"Light gray":"9,99 $"},
+			{"light green":"9,99 $"},
+			{"light blue":"9,99 $"},
+			{"pink":"9,99 $"},
+			{"light purple":"9,99 $"},
+			{"yellow":"9,99 $"},
+			{"green":"9,99 $"},
+			{"light pink":"9,99 $"}];
+			$.each(nameitemcolor,function(index){
+				$.each(this, function (name, value) {
+					$("#nameitem-color"+index).text(name);
+			      	$("#priceitem-color"+index).text(value);
+			   	});
+			});
+			checkScroll();
+			$(window).bind("scroll",function(){
+				var scroll = $(window).scrollTop();
+				if(scroll>300){
+					$("#header-scroll").css("visibility","visible");
+				} else{
+					$("#header-scroll").css("visibility","hidden");
+				};
+				if(scroll>700){
+					// $("#login,#shopping-bag,#scroll-top").css("visibility","visible");
+					$("#scroll-top").css("visibility","visible");
+					$(".box").css('opacity', "1");
+				} else{
+					$("#scroll-top").css("visibility","hidden");
+					$(".box").css('opacity', "0");
+				};
+				if(scroll>1200){
+					$("#title-banner-4").css({"animation-name":"title-3","visibility": "visible","margin-top": "-355px","opacity": "1"});
+				};
+				if(scroll>2500){
+					$("#title-banner-5").css({"animation-name":"title","visibility": "visible"});
+				};
+			});
+			function checkScroll(){
+				var x = $(window).scrollTop();
+				if(x>300){
+					$("#header-scroll").css("visibility","visible");
+				} else{
+					$("#header-scroll").css("visibility","hidden");
+				};
+				if(x>700){
+					$("#scroll-top").css("visibility","visible");
+				} else{
+					$("#scroll-top").css("visibility","hidden");
+				};
+				if(x>1200){
+					$("#title-banner-4").css({"animation-name":"title-3","visibility": "visible"});
+				};
+				if(x>2500){
+					$("#title-banner-5").css({"animation-name":"title","visibility": "visible"});
+				};
+			};
+			$(".bag-li").click(function(){
+				alert('Thank you for shopping! Go to Bag to check your order.');
+			});
+			$(".heart-li").click(function(){
+				alert('Thank you for your feedback!');
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- HEADER -->
+	
+	<!-- END HEADER -->
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<div id="bg-content"></div>
+		<div class="">
+			<div class="banner">
+				<img src="image/Collection/banner1.jpg" width="100%" height="auto" style="border-radius: 2px;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);">
+				<p id="title-banner-1">the summer</p>
+			</div>
+			<div id="content-in">
+				<p class="content-in-title" style="color: #E6BC79;">the summer collection</p>
+				<div id="all-item" class="items">
+					<script type="text/javascript">
+						for (var i = 1; i <= 8; i++) {
+							document.write('<div class="item"><a href="item-detail.html#'+i+'"><div class="box-hover"><div class="overlay"></div><div class="option"><ul><a href="item-detail.html#'+i+'"><li><i class="fa fa-search-plus" aria-hidden="true"></i></li></a><a><li class="bag-li"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li></a><a><li class="heart-li"><i class="fa fa-heart" aria-hidden="true"></i></li></a></ul></div></div></a><img class="img-item" src="image/Collection/'+i+'.jpg"><div class="detail-item"><span id="nameitem-'+(i-1)+'" class="name-item"></span><br><span id="priceitem-'+(i-1)+'" class="price-item">$</span></div></div>');
+						}
+					</script>		
+				</div>		
+		    </div>
+		</div>
+		<div class="clear"></div>
+		<div class="">
+			<div class="banner" id="img-banner-mid">
+				<img src="image/Collection/banner2.jpg" width="100%" height="auto" style="border-radius: 2px;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);">
+				<p id="title-banner-4">Twinkle</p>
+			</div>
+			<div id="content-in">
+				<p class="content-in-title" style="color: #E4BD79;">the color collection</p>
+				<div id="all-item" class="items">
+					<script type="text/javascript">
+						for (var i = 1; i <= 8; i++) {
+							document.write('<div class="item"><a href="item-detail.html#color'+i+'"><div class="box-hover"><div class="overlay"></div><div class="option"><ul><a href="item-detail.html#color'+i+'"><li><i class="fa fa-search-plus" aria-hidden="true"></i></li></a><a><li class="bag-li"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li></a><a><li class="heart-li"><i class="fa fa-heart" aria-hidden="true"></i></li></a></ul></div></div></a><img class="img-item" src="image/Collection/color'+i+'.jpg"><div class="detail-item"><span id="nameitem-color'+(i-1)+'" class="name-item"></span><br><span id="priceitem-color'+(i-1)+'" class="price-item">$</span></div></div>');
+						}
+					</script>			
+				</div>		
+		    </div>
+		</div>
+		<div class="clear"></div>
+		<div class="">
+			<div class="banner">
+				<img src="image/Collection/banner3.jpg" width="100%" height="auto" style="border-radius: 2px;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);">
+				<p id="title-banner-5">the spring</p>
+			</div>
+			<div id="content-in">
+				<p class="content-in-title" style="color: #A3764D;">the spring collection</p>
+				<div id="all-item" class="items">
+					<script type="text/javascript">
+						for (var i = 9; i <= 16; i++) {
+							document.write('<div class="item"><a href="item-detail.html#'+i+'"><div class="box-hover"><div class="overlay"></div><div class="option"><ul><a href="item-detail.html#'+i+'"><li><i class="fa fa-search-plus" aria-hidden="true"></i></li></a><a class="bag-li"><li><i class="fa fa-shopping-bag" aria-hidden="true"></i></li></a><a><li class="heart-li"><i class="fa fa-heart" aria-hidden="true"></i></li></a></ul></div></div></a><img class="img-item" src="image/Collection/'+i+'.jpg"><div class="detail-item"><span id="nameitem-'+(i-1)+'" class="name-item"></span><br><span id="priceitem-'+(i-1)+'" class="price-item">vnđ : đ</span></div></div>');
+						}
+					</script>			
+				</div>		
+ 				<!-- <a href="#" class="bt">
+			    	<div class="button-product">
+			    		<p>Show more</p>
+			    	</div>
+		    	</a> -->
+		    </div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	<!-- END CONTENT -->
+	
+
+	<!-- FOOTER -->
+	
+	<!-- END FOOTER -->
+
+</body>
+</html>

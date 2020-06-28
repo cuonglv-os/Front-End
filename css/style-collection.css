@@ -1,0 +1,215 @@
+/* CONTENT */
+#content{
+   width: 100%;
+   height: auto;
+   float: left;
+   clear: both;
+   position: relative;
+   margin: 0 auto;
+   z-index: -10000;
+}
+#bg-content{
+   position: absolute;
+   width: 78%;
+   background: white;
+   box-shadow: 0px 0px 10px 5px #EEEEEE;
+   z-index: -2;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 15px;
+}
+#content-in{
+   width: 78%;
+   height: auto;
+   position: relative;
+   margin: 0 auto;
+}
+.banner{
+   position: relative;
+   width: 100%;
+   margin: 0 auto;
+   z-index: -1;
+}
+#img-banner-mid{
+   width: 100%;
+}
+.content-in-title{
+   text-transform: uppercase;
+   font-family: "Avo";
+   font-size: 53px;
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 40px;
+   font-weight: bold;
+   position: relative;
+}
+#title-banner-1{
+   color: #F5CF98;
+   text-transform: uppercase;
+   font-family: "Avo";
+   font-size: 52px;
+   position: absolute;
+   top: 37px;
+   left: 101px;
+   animation-name: title;
+   animation-duration: 3s;
+   font-weight: 600;
+}
+@keyframes title{
+   0%{opacity:0;}
+   100%{opacity:1;}
+}
+#title-banner-4{
+   font-family: "Hi";
+   animation-duration: 2s;
+   position: absolute;
+   font-weight: bold;
+   font-size: 48px;
+   margin-top: -405px;
+   opacity:0;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-left: -90px;
+}
+@keyframes title-3{
+   0%{opacity:0;margin-top: -405px;}
+   100%{opacity:1; margin-top: -355px;}
+}
+#title-banner-5{
+   color: #A89075;
+   text-transform: uppercase;
+   font-family: "Avo";
+   font-size: 52px;
+   position: absolute;
+   bottom: 595px;
+   left: 101px;
+   animation-duration: 3s;
+   font-weight: 600;
+   visibility: hidden;
+}
+.clear{
+   width: 100%;
+   height: 1px;
+   position: relative;
+   float: left;
+   margin-bottom: 100px;
+}
+.items{
+   width: 880px;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   height: auto; 
+}
+.item{  
+   margin: 27px 20px;
+   float: left;
+   position: relative;
+}
+.detail-item{
+   text-align: center;
+   width: 180px;
+   margin-top: 15px;
+   font-size: 17px;
+   color: #383838;
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+   font-size: 15.5px;
+}
+.name-item{
+   font-family: "Avo";
+}
+.price-item{
+   font-family: "Aller";
+   position: relative;
+   top: 5px;
+   color: #e92f46;
+}
+.img-item{
+   width: 180px;
+   height: 195px;
+   position: relative;
+}
+.box-hover{
+   width: 180px;
+   height: 195px;
+   position: absolute;
+   top: 0px;
+   z-index: 99999;
+} 
+.overlay{
+   width: 180px;
+   height: 195px;
+   position: absolute;
+   background-color: rgba(0,0,0,0.1);
+   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);
+   opacity: 0;
+   transition: all 0.3s;
+} 
+.option{
+   position: absolute;
+   height: 0px;
+   bottom: 30px;
+   width: 182px;
+   margin-left: -1px;
+   opacity: 0;
+   transition: all 0.4s;
+} 
+.box-hover:hover .overlay{
+   opacity: 1;
+} 
+.box-hover:hover .option{
+   opacity: 1;
+   height: 40px;
+   bottom: 0px;
+}
+.box-hover a{
+   text-decoration: none;
+   color: #383838;
+} 
+.box-hover ul{
+   background-color: #f4f4f4;
+}           
+.box-hover li{
+   display: inline-block;
+   text-align: center;
+   padding: 0 21.56px;
+   line-height: 40px;
+   transition: all 0.3s;
+}
+.box-hover li:hover{
+   color: #f4f4f4;
+   /*background-color: #103667;*/
+   background-color: #757575;
+}
+.box-hover li .fa{
+   font-size: 18px;
+} 
+/*.bt{
+   font-family: "Avo";
+   font-size: 17px;
+   color: #383838;
+   text-decoration: none;
+   text-align: center;
+   line-height: 31px;
+   position: relative;
+   float: left;
+   clear: both;
+   top: 7px;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-left: 350px;
+}
+.button-product{
+   position: absolute;
+   width: 140px;
+   height: 35px;
+   border: 0.5px solid #383838;
+   border-radius: 3px;
+   transition: all 0.3s;
+}
+.button-product:hover{
+   letter-spacing: 1px;
+   color: #fff;
+   background-color: #383838;
+}*/
